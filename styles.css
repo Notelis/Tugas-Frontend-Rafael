@@ -1,0 +1,178 @@
+:root {
+  --bg: #0f1724;
+  --maxw: 1100px;
+  --pad: 18px;
+  --radius: 14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), #071021);
+  color: #e6eef6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 32px 18px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.role {
+  color: lightgray;
+  font-size: 13px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.contact a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact a:hover {
+  color: greenyellow;
+}
+
+.section-title {
+  font-size: 12px;
+  color: lightgray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-category h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: greenyellow;
+}
+
+.skill-category ul {
+  margin: 0;
+  padding-left: 20px;
+  color: lightgray;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+header.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+header.summary h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header.summary p {
+  margin: 6px 0 0;
+  color: lightgray;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-item,
+.edu-item,
+.project-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.muted {
+  color: lightgray;
+  font-size: 13px;
+}
+
+footer {
+  color: lightgray;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cert-item img {
+  max-width: 400px; 
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.cert-item img:hover {
+  transform: scale(1.05);
+}
+
+.cert-item figure {
+  text-align: center;
+}
+
+.cert-item figcaption {
+  margin-top: 6px;
+  font-size: 20px;
+  color: greenyellow;
+}
